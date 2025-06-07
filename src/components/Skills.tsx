@@ -7,13 +7,11 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Languages de Programmation",
-      icon: Code,
       skills: ["C", "Java", "Python", "SQL", "JavaScript", "HTML", "CSS", "R", "Assembleur"],
       color: "text-blue-600"
     },
     {
       title: "Langues",
-      icon: Globe,
       skills: [
         { name: "Français", level: "C1" },
         { name: "Anglais", level: "C1" },
@@ -25,7 +23,6 @@ const Skills = () => {
 
   const experience = {
     title: "Expériences académiques",
-    icon: Award,
     description: "MENTOR, Programme DIGIGIRLZ par L'association ANOUAL",
     details: "Monitrice dans le programme DIGIGIRLZ, 8ème édition, visant à encourager l'intégration des filles âgées de 15 à 18 ans dans les domaines STEM, avec pour thème \"Safe and Secure\", centré sur la cybersécurité.",
     color: "text-purple-600"
@@ -51,7 +48,7 @@ const Skills = () => {
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/20">
-                  <skillCategories[0].icon className={`w-6 h-6 ${skillCategories[0].color}`} />
+                  <Code className={`w-6 h-6 ${skillCategories[0].color}`} />
                 </div>
                 <CardTitle className="text-xl">{skillCategories[0].title}</CardTitle>
               </div>
@@ -72,7 +69,7 @@ const Skills = () => {
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="p-3 rounded-lg bg-green-100 dark:bg-green-900/20">
-                  <skillCategories[1].icon className={`w-6 h-6 ${skillCategories[1].color}`} />
+                  <Globe className={`w-6 h-6 ${skillCategories[1].color}`} />
                 </div>
                 <CardTitle className="text-xl">{skillCategories[1].title}</CardTitle>
               </div>
@@ -96,7 +93,7 @@ const Skills = () => {
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="p-3 rounded-lg bg-purple-100 dark:bg-purple-900/20">
-                  <experience.icon className={`w-6 h-6 ${experience.color}`} />
+                  <Award className={`w-6 h-6 ${experience.color}`} />
                 </div>
                 <CardTitle className="text-xl">{experience.title}</CardTitle>
               </div>
