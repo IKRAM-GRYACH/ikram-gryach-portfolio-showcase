@@ -7,7 +7,8 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Configuration pour GitHub Pages
-  base: process.env.NODE_ENV === 'production' ? '/ikram-gryach-portfolio-showcase/' : '/',
+  base: mode === 'production' ? '/ikram-gryach-portfolio-showcase/' : '/',
+
   server: {
     host: "::",
     port: 8080,
